@@ -1,0 +1,10 @@
+.headquarter img{
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+footer{
+    justify-content: right;
+}
