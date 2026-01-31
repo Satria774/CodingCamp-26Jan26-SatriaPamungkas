@@ -1,53 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
-    <title>My Website</title>
-</head>
-<body>
-    <header>
-        <img src="" alt="">
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#ourProlfile">Our Profile</a></li>
-            <li><a href="portofolio">Portofolio</a></li>
-            <li><a href="messageUs">Message Us</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div>
-            <h2>Hi Name, Welcome To Website</h2>
-            <p>ini adalah website latihan pertama</p>
-        </div>
-        <div id="headquarter">
-            <h3>Our Headquarter</h3>
-            <img src="jakarta.webp" alt="jakarta">
-            <img src="surabaya.webp" alt="surabaya">
-            <img src="bali.webp" alt="bali">
-        </div>
-        <div>
-            <h3>Message Us</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <form action="">
-                <label for="nama">Nama :</label>
-                <input type="text" id="nama" name="nama" placeholder="John Doe"> <br>
-                <label for="tanggalLahir">Tanggal Lahir :</label>
-                <input type="date" id="tanggalLahir" name="TanggalLahir"> <br>
-                <label for="jenis_kelamin">Jenis Kelamin :</label>
-                <input type="radio" id="laki-laki" name="laki-laki">Laki-laki
-                <input type="radio" id="perempuan" name="perempuan">Perempuan<br>
-                <label for="pesan">Pesan</label>
-                <textarea name="pesan" rows="5" cols="30">tulis pesan disini..... </textarea>
-            </form>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CSS Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>My Website</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- Logo -->
+      <div class="logo"></div>
+
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#our-profile">Our Profile</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#message-us">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- Home Page -->
+      <section id="home-page" class="min-h-[500px] text-center content-center">
+        <h2 class="text-xl font-bold" id="WelcomeSpeech">
+          Hi Name, Welcome To Website
+        </h2>
+        <p>We Are Happy With Your Visit</p>
+      </section>
+
+      <!-- Our Profile -->
+      <section id="our-profile">
+        <h3>Our Profile</h3>
+        <p>
+          Last Knight Software is a software development company focused on
+          providing reliable, secure, and sustainable digital solutions for
+          modern business needs. We are here to help companies utilize
+          technology appropriately, not just follow trends, so that the systems
+          they build can be used and developed in the long term.
+        </p>
+
+        <p>
+          Founded in 2020, Last Knight Software has quickly established itself
+          as a trusted partner for businesses seeking innovative software
+          solutions. Our team of experienced developers, designers, and project
+          managers work closely with clients to understand their unique
+          requirements and deliver tailored solutions that drive growth and
+          efficiency. At Last Knight Software, we pride ourselves on our
+          commitment to quality, transparency, and customer satisfaction. We
+          believe that technology should be accessible to all businesses,
+          regardless of size or industry, and we strive to create solutions that
+          are both effective and user-friendly.
+        </p>
+      </section>
+
+      <!-- Vision -->
+      <section id="vision">
+        <h3>Our Vision</h3>
+        <p>
+          Menjadi perusahaan pengembang perangkat lunak terpercaya yang
+          menghadirkan solusi teknologi berkualitas tinggi dan berorientasi pada
+          keberlanjutan bisnis.
+        </p>
+      </section>
+
+      <!-- Mission -->
+      <section id="mission">
+        <h3>Our Mission</h3>
+        <ol>
+          <li>
+            Mengembangkan perangkat lunak dengan standar kualitas tinggi dan
+            struktur yang terencana.
+          </li>
+          <li>
+            Menyediakan solusi teknologi yang aman, stabil, dan mudah
+            dikembangkan.
+          </li>
+          <li>
+            Menyesuaikan solusi digital dengan kebutuhan dan proses bisnis
+            klien.
+          </li>
+          <li>
+            Mengutamakan pengalaman pengguna tanpa mengorbankan performa sistem.
+          </li>
+          <li>
+            Memberikan dukungan teknis yang berkelanjutan dan bertanggung jawab.
+          </li>
+        </ol>
+      </section>
+
+      <!-- About Us -->
+      <section id="about-us">
+        <h3>About Us</h3>
+        <p>
+          Last Knight Software dibangun dengan keyakinan bahwa teknologi harus
+          menjadi fondasi yang memperkuat bisnis, bukan menjadi beban
+          operasional.
+        </p>
+        <p>
+          Kami tidak hanya berfokus pada pengembangan aplikasi, tetapi juga pada
+          pemahaman kebutuhan klien, perancangan solusi yang tepat, serta
+          penerapan teknologi yang efisien dan aman.
+        </p>
+        <p>Setiap sistem yang kami kembangkan dirancang agar:</p>
+        <ul>
+          <li>dapat digunakan secara optimal,</li>
+          <li>mudah dipelihara,</li>
+          <li>dan siap berkembang sesuai kebutuhan bisnis.</li>
+        </ul>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <h3>Our Services</h3>
+        <ul>
+          <li>
+            <strong>Web Development</strong><br />
+            Pembuatan website profesional yang responsif, cepat, dan sesuai
+            dengan identitas bisnis.
+          </li>
+          <li>
+            <strong>Web Application Development</strong><br />
+            Pengembangan aplikasi berbasis web untuk mendukung operasional dan
+            proses bisnis.
+          </li>
+          <li>
+            <strong>System Integration</strong><br />
+            Integrasi berbagai sistem untuk meningkatkan efisiensi dan
+            konsistensi data.
+          </li>
+          <li>
+            <strong>Maintenance & Technical Support</strong><br />
+            Pemeliharaan sistem dan dukungan teknis untuk menjaga performa dan
+            keamanan aplikasi.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Our Values -->
+      <section id="values">
+        <h3>Our Values</h3>
+        <ul>
+          <li>
+            <strong>Quality</strong> – Menjaga standar kualitas pada setiap
+            proses pengembangan
+          </li>
+          <li>
+            <strong>Reliability</strong> – Solusi yang dapat diandalkan dalam
+            jangka panjang
+          </li>
+          <li>
+            <strong>Security</strong> – Keamanan data sebagai prioritas utama
+          </li>
+          <li><strong>Efficiency</strong> – Solusi yang tepat dan efektif</li>
+          <li>
+            <strong>Commitment</strong> – Tanggung jawab terhadap setiap produk
+            yang dikembangkan
+          </li>
+        </ul>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section id="why-us">
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>Pendekatan pengembangan yang terstruktur dan terencana</li>
+          <li>Fokus pada kualitas dan keberlanjutan sistem</li>
+          <li>Komunikasi yang jelas dan profesional</li>
+          <li>Solusi yang disesuaikan dengan kebutuhan bisnis</li>
+        </ul>
+      </section>
+
+      <!-- Headquarter -->
+      <section id="headquarter">
+        <h3>Our Headquarter</h3>
+        <div class="headquarter-container">
+          <div class="hq-item">
+            <img src="assets/jakarta.webp" alt="jakarta" />
+            <p>Jakarta</p>
+          </div>
+          <div class="hq-item">
+            <img src="assets/surabaya.webp" alt="surabaya" />
+            <p>Surabaya</p>
+          </div>
+          <div class="hq-item">
+            <img src="assets/bali.webp" alt="bali" />
+            <p>Bali</p>
+          </div>
         </div>
+      </section>
+
+      <!-- Message Us -->
+      <section id="message-us" class="min-h-[500px] mx-8">
+        <h2 class="text-xl font-bold">Message Us</h2>
+        <p class="mt-2">
+          Have a question or want to work with us? Send us a message!
+        </p>
+
+        <div class="message-container">
+          <!-- Form -->
+          <div class="form-section">
+            <form action="">
+              <div class="mb-4">
+                <label class="block mb-2" for="nama">Nama :</label>
+                <input
+                  class="w-full p-2 border rounded"
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block mb-2" for="tanggalLahir"
+                  >Tanggal Lahir :</label
+                >
+                <input
+                  class="w-full p-2 border rounded"
+                  type="date"
+                  id="tanggalLahir"
+                  name="TanggalLahir"
+                />
+                <br />
+              </div>
+              <div class="mb-4">
+                <label class="block mb-2" for="jenis_kelamin"
+                  >Jenis Kelamin :</label
+                >
+                <input
+                  type="radio"
+                  id="jenis_kelamin"
+                  name="jenis_kelamin"
+                  value="Laki-Laki"
+                />Laki-laki
+                <input
+                  type="radio"
+                  id="jenis_kelamin"
+                  name="jenis_kelamin"
+                  value="Perempuan"
+                />Perempuan
+              </div>
+              <div class="mb-4">
+                <label class="block mb-2" for="pesan">Pesan</label>
+                <textarea
+                  class="w-full p-2 border rounded"
+                  name="pesan"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+              <button class="px-4 py-2 bg-blue-500 text-white rounded">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Preview -->
+          <div class="preview-section">
+            <h3>Preview Message</h3>
+            <div class="preview-box">
+              <p>
+                <strong>Current Time:</strong><span id="current-time"></span>
+              </p>
+              <p><strong>Nama:</strong> <span id="preview-nama"></span></p>
+              <p>
+                <strong>Tanggal Lahir:</strong>
+                <span id="preview-tanggal-lahir"></span>
+              </p>
+              <p>
+                <strong>Jenis Kelamin:</strong>
+                <span id="preview-jenis-kelamin"></span>
+              </p>
+              <p><strong>Pesan:</strong> <span id="preview-pesan"></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        Created By Satria Pamungkas &copy; 2026
+      <div class="text-center p-4">
+        &copy; 2026 By Satria Pamungkas. All rights reserved.
+      </div>
     </footer>
-</body>
+
+    <!-- javaScript Files -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
