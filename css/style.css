@@ -131,12 +131,15 @@ nav a{
     margin-bottom: 15px;
 }
 
-.preview-box{
-    background-color: #f3f4f6;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    padding: 20px;
-    min-height: 300px;
+.preview-box span {
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.preview-box span:empty::before {
+    content: '-';
+    color: #9ca3af;
+    font-style: italic;
 }
 
 .preview-box p{
